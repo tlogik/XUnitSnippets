@@ -1,0 +1,67 @@
+{
+    "XUnit Fact": {
+        "prefix": "xfact",
+        "body": [
+            "[Fact]",
+            "public void ${1:testName}()",
+            "{",
+            "    ${0:throw new NotImplementedException();}",
+            "}"
+        ],
+        "description": "XUnit Fact"
+    },
+
+    "XUnit Theory": {
+        "prefix": "xtheory",
+        "body": [
+            "[Theory]",
+            "public void ${1:TestName}()",
+            "{",
+            "    ${0:throw new NotImplementedException();}",
+            "}"
+        ],
+        "description": "XUnit Theory"
+    },
+
+    "XUnit Test Class": {
+        "prefix": "xclass",
+        "body": [
+            "public class ${1:TestClass}",
+            "{",
+            "    public ${1:TestClass}()",
+            "    {",
+            "        ",
+            "    }",
+            "",
+            "    [Fact]",
+            "    public void Test1()",
+            "    {",
+            "        ${0:throw new NotImplementedException();}",
+            "    }",
+            "}"
+        ],
+        "description": "XUnit Fact"
+    },
+
+    "XUnit TheoryData Field": {
+        "prefix": "xdatafield",
+        "body": [
+            "public TheoryData<${1:T}> ${2:name} = new TheoryData<${1:T}>()",
+            "{",
+            "    ${0}",
+            "};"
+        ],
+        "description": "XUnit TheoryData Field"
+    },
+
+    "XUnit TheoryData Method": {
+        "prefix": "xdatam",
+        "body": [
+            "public TheoryData<${1:T}> ${2:name}()",
+            "{",
+            "    ${0}",
+            "}"
+        ],
+        "description": "XUnit TheoryData Field"
+    }
+}

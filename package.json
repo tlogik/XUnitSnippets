@@ -1,0 +1,27 @@
+{
+    "name": "xunitsnippets",
+    "displayName": "XUnit Snippets",
+    "description": "Snippet support for common xunit code (facts, theory, test class, theory data,...)",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [{
+                "language": "csharp",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "fsharp",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "visualbasic",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
