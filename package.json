@@ -3,6 +3,8 @@
     "displayName": "XUnit Snippets",
     "description": "Snippet support for common xunit code (facts, theory, test class, theory data,...)",
     "version": "1.0.0",
+    "repository": { "url": "https://github.com/farlee2121/XUnitSnippets" },
+    "keywords": ["XUnit", "Unit Tests", "dotnet", "Snippets", "Fact", "Theory"],
     "engines": {
         "vscode": "^1.0.0"
     },
@@ -11,17 +13,8 @@
     ],
     "contributes": {
         "snippets": [{
-                "language": "csharp",
-                "path": "./snippets/snippets.json"
-            },
-            {
-                "language": "fsharp",
-                "path": "./snippets/snippets.json"
-            },
-            {
-                "language": "visualbasic",
-                "path": "./snippets/snippets.json"
-            }
-        ]
+            "language": "csharp",
+            "path": "./snippets/snippets.csharp.json"
+        }]
     }
 }
