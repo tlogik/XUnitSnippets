@@ -5,6 +5,7 @@
     "version": "1.0.0",
     "repository": { "url": "https://github.com/farlee2121/XUnitSnippets" },
     "keywords": ["XUnit", "Unit Tests", "dotnet", "Snippets", "Fact", "Theory"],
+    "publisher": "spencer-farley",
     "engines": {
         "vscode": "^1.0.0"
     },
