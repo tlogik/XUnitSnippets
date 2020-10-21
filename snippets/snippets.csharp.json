@@ -3,7 +3,8 @@
         "prefix": "xfact",
         "body": [
             "[Fact]",
-            "public void ${1:testName}()",
+            "[Trait(\"Category\", ${1|Unit,Integration|})]",
+            "public void ${2:testName}()",
             "{",
             "    ${0:throw new NotImplementedException();}",
             "}"
@@ -15,7 +16,8 @@
         "prefix": "xtheory",
         "body": [
             "[Theory]",
-            "public void ${1:TestName}()",
+            "[Trait(\"Category\", ${1|Unit,Integration|})]",
+            "public void ${2:TestName}()",
             "{",
             "    ${0:throw new NotImplementedException();}",
             "}"
