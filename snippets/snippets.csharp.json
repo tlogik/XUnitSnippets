@@ -1,9 +1,21 @@
 {
-    "XUnit Fact": {
+	"Arrange - Act - Assert": {
+		"prefix": "aaa",
+		"body": [
+		  "//ARRANGE",
+		  "",
+		  "//ACT",
+		  "",
+		  "//ASSERT"
+		],
+		"description": "Arrange - Act - Assert"
+	  },
+
+	"XUnit Fact": {
         "prefix": "xfact",
         "body": [
             "[Fact]",
-            "[Trait(\"Category\", ${1|Unit,Integration|})]",
+            "[Trait(\"Category\", ${1|\"Unit\",\"Integration\"|})]",
             "public void ${2:testName}()",
             "{",
             "    ${0:throw new NotImplementedException();}",
@@ -16,7 +28,7 @@
         "prefix": "xtheory",
         "body": [
             "[Theory]",
-            "[Trait(\"Category\", ${1|Unit,Integration|})]",
+            "[Trait(\"Category\", ${1|\"Unit\",\"Integration\"|})]",
             "public void ${2:TestName}()",
             "{",
             "    ${0:throw new NotImplementedException();}",
